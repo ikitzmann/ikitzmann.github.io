@@ -15,7 +15,7 @@ jobs:
         id: rss
         uses: katydecorah/instagram-rss-action@v0.3.0
         with:
-          yourInstagram: w_fritzi
+          yourInstagram: instagram_handle
           listOfInstagrams: jannikobenhoff,germanroamers,quarterlifepoetry,pixiebrutusofficial
       - name: Commit files
         if: ${{ success() && steps.rss.outputs.RSS_STATUS == 'success' }}
